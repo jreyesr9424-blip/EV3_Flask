@@ -1,0 +1,152 @@
+/* Estilos generales - Evaluación 3 Flask */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.contenedor {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+/* ---------- Menú principal ---------- */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.boton-menu {
+    display: inline-block;
+    width: 185px;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+    transition: background-color 0.2s;
+}
+
+.boton-menu:hover {
+    background-color: #0056b3;
+}
+
+/* ---------- Tarjetas y formularios ---------- */
+.tarjeta {
+    background-color: #fff;
+    padding: 24px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+}
+
+.tarjeta h1,
+.tarjeta h2 {
+    margin-top: 0;
+}
+
+.tarjeta label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+.tarjeta input {
+    width: 100%;
+    padding: 9px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.boton-secundario {
+    background-color: #6c757d;
+}
+
+.boton-secundario:hover {
+    background-color: #545b62;
+}
+
+/* Variante centrada (Ejercicio 2) */
+.centrada {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+}
+
+.centrada label {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* ---------- Resultados ---------- */
+.resultado {
+    font-size: 17px;
+    margin: 14px 0 0;
+}
+
+.aprobado {
+    color: #1e7e34;
+    font-weight: bold;
+}
+
+.reprobado {
+    color: #c82333;
+    font-weight: bold;
+}
+
+.error {
+    color: #c82333;
+    margin-top: 14px;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* ---------- Historial en memoria ---------- */
+.historial table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.historial th,
+.historial td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+.historial th {
+    background-color: #007bff;
+    color: #fff;
+}
